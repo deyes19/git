@@ -13,3 +13,173 @@
  *= require_tree .
  *= require_self
  */
+ *{
+    margin: 0;
+}
+
+
+.boton{
+    background: rgb(104, 190, 26);
+    color: white;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    -webkit-border-radius:10 ;
+    -moz-border-radius:10 ;
+    border-radius: 10px;
+}
+.boton:hover {
+    background-color: red;
+    color: white;
+}
+
+label{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 10px;
+    text-transform: uppercase;
+    padding: 10px 10px 10px 10px;
+    line-height : 25px;
+}
+
+h1{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+input {
+    border-radius: 98px 98px 98px 98px;
+    -moz-border-radius: 98px 98px 98px 98px;
+    -webkit-border-radius: 98px 98px 98px 98px;
+    border: 2px solid black;
+}
+
+
+select {
+    border-radius: 98px 98px 98px 98px;
+    -moz-border-radius: 98px 98px 98px 98px;
+    -webkit-border-radius: 98px 98px 98px 98px;
+    border: 2px solid black;
+}
+
+
+textarea {
+    border-radius: 98px 98px 98px 98px;
+    -moz-border-radius: 98px 98px 98px 98px;
+    -webkit-border-radius: 98px 98px 98px 98px;
+    border: 2px solid black;
+}
+
+button{
+    --webkit-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.43);
+-moz-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.43);
+box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.43);     
+}
+
+li{
+    list-style: none;
+}
+.cer2{
+    width: 120px;
+    margin: 10px;
+}
+.cer1{
+    width: 37px;
+    margin: 10px;
+}
+.der{
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 9px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+
+    color: black; 
+
+}
+.dat1{
+    width: 240px;
+  }
+
+@media (max-width: 980px){
+
+.container{
+    display: grid;
+}
+.documentos {
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: space-between;
+    padding: 20 20px 20 10px;
+
+    width: 90%;
+    height: auto;
+    background-color:rgb(255, 255, 255);
+}
+label{
+    display: flex;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 10px;
+    text-transform: uppercase;
+    padding: 10px 10px 10px 10px;
+}
+.main .articulo h1{
+    width: 97%;
+    margin: 0;
+    margin-top:40px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 47px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background-color: rgba(255, 0, 23, 0.30);
+
+    color: #FFFFFF;
+    
+}
+
+input {
+    width: 420px;
+    border-radius: 98px 98px 98px 98px;
+    -moz-border-radius: 98px 98px 98px 98px;
+    -webkit-border-radius: 98px 98px 98px 98px;
+    border: 2px solid black;
+    bottom:;
+}
+
+
+
+
+
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
