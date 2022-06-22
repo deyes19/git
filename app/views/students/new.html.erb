@@ -1,0 +1,19 @@
+<h1>Enter the Student Information</h1>
+<%= form_for @student do |f| -%>
+    <label>Firstname</label>
+    <%= f.text_field :name %>
+    <label>Lastname</label>
+    <%= f.text_field :lastname %>
+    <label>documento</label>
+    <%= f.text_field :ndoc %>
+    <%= f.submit value: "Crear estudiante", class:"boton"  %>
+<% end -%>
+<br />
+
+<h1>display all student information </h1>
+<% if !@students.blank? %>
+    <% for item in @students %>
+        <%= item.name %> - <%= item.lastname %> <%= item.ndoc %> <br />
+    <% end %>
+<% else %>
+<% end %>
