@@ -11,9 +11,11 @@
 <br />
 
 <h1>display all student information </h1>
+<ul> 
 <% if !@students.blank? %>
     <% for item in @students %>
-        <%= item.name %> - <%= item.lastname %> <%= item.ndoc %> <br />
+       <li><%= item.name %> - <%= item.lastname %>-<%= item.ndoc %>-<%= link_to "Editar", edit_student_path(@student)%></li> <br />
     <% end %>
 <% else %>
 <% end %>
+</ul>
